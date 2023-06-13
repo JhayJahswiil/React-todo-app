@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  border: 2px solid red;
+}
+
+.todo h1{
+  background-color: #A879E2;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.tasks{
+  background-color: white;
+  padding: 20px;
+}
