@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import '../Styles/TaskItem.css'
 
 const TaskItem = ({ task, deleteTask, markTaskComplete }) => {
@@ -11,14 +14,20 @@ const TaskItem = ({ task, deleteTask, markTaskComplete }) => {
     };
 
     return (
-        <li className='li'>
+        <li className='task-item'>
             <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
                 {task.title}
             </span>
-            {!task.completed && (
-                <button onClick={handleComplete}>✔</button>
-            )}
-            <button onClick={handleDelete}>🚮</button>
+            <div>
+                {!task.completed && (
+                    <button onClick={handleComplete}>
+                        <FontAwesomeIcon icon={faCheck} />
+                    </button>
+                )}
+                <button onClick={handleDelete}>
+                    <FontAwesomeIcon icon={faTrash} />
+                </button>
+            </div>
         </li>
     );
 };

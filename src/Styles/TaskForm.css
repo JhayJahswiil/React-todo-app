@@ -14,3 +14,15 @@ input[type='text']{
 .Add-task-btn{
     background-color: #A879E2;
 }
+
+@media screen and (max-width:467px) {
+    input[type='text']{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .Add-task-btn{
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+}

@@ -1,3 +1,4 @@
-/* .li{
-    border: 2px solid red;
-} */
+.task-list{
+    list-style-type: circle;
+    padding: 5px;
+}
