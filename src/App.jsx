@@ -29,12 +29,12 @@ const App = () => {
 
   return (
     <div className='todo'>
-      <Footer />
       <h1>Todo List</h1>
       <div className='tasks'>
         <TaskForm addTask={addTask} />
         <TaskList tasks={tasks} deleteTask={deleteTask} markTaskComplete={markTaskComplete} />
       </div>
+      <Footer />
     </div>
   );
 };
