@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TaskForm from './Components/TaskForm';
 import TaskList from './Components/TaskList';
+import Footer from './Components/footer';
 // import TaskItem from './Components/TaskItem';
 
 import './App.css'
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <div className='todo'>
+      <Footer />
       <h1>Todo List</h1>
       <div className='tasks'>
         <TaskForm addTask={addTask} />

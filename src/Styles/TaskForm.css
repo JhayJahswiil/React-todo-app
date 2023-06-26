@@ -1,18 +1,17 @@
-
-
 form{
     border: 2px solid white;
 }
 
 input[type='text']{
-    padding: 10px;
-    border-radius: 10px;
+    padding: 11px;
+    border-radius: 7px;
     outline: none;
     border: none;
 }
 
 .Add-task-btn{
     background-color: #A879E2;
+    margin-left: 2px;
 }
 
 @media screen and (max-width:467px) {

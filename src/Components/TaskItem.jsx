@@ -20,11 +20,11 @@ const TaskItem = ({ task, deleteTask, markTaskComplete }) => {
             </span>
             <div>
                 {!task.completed && (
-                    <button onClick={handleComplete}>
+                    <button onClick={handleComplete} className='icons'>
                         <FontAwesomeIcon icon={faCheck} />
                     </button>
                 )}
-                <button onClick={handleDelete}>
+                <button onClick={handleDelete} className='icons'>
                     <FontAwesomeIcon icon={faTrash} />
                 </button>
             </div>

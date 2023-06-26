@@ -23,6 +23,16 @@
   /* border: 2px solid red; */
 }
 
+.footer{
+  background-color: #A879E2;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  left: 0;
+}
+
 @media screen and (max-width:467px) {
   .tasks{
     min-height: 50vh;
